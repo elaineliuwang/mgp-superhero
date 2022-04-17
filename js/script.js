@@ -8,6 +8,7 @@ var span = document.getElementsByClassName("close")[1];
 
 btn.onclick = function() {
   modal.style.display = "block";
+  console.log("dress code");
 }
 
 btn2.onclick = function() {
