@@ -178,17 +178,20 @@ $(document).ready(function () {
       });
 
     /****************** Smooth Scrolling *****************/
+    const $scroll = $('#scroll');
 
     $(".tm-btn-next").on('click', function(event) {
         if (this.hash !== "") {
             event.preventDefault();
             var hash = this.hash;
 
+        if ($scroll.length){
             $('html, body').animate({
                 scrollTop: $(hash).offset().top
             }, 800, function(){
                 // window.location.hash = hash;
             });
+         }
         }
     });
 
